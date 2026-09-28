@@ -16,6 +16,9 @@
       opacity: 0;
       animation: lineSlideUp 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
     }
+    @media (prefers-reduced-motion: reduce) {
+      .term-line { opacity: 1 !important; transform: none !important; animation: none !important; }
+    }
   </style>
   <rect width="490" height="344" rx="8" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
   <path d="M 0 8 A 8 8 0 0 1 8 0 L 482 0 A 8 8 0 0 1 490 8 L 490 36 L 0 36 Z" fill="#161b22"/>

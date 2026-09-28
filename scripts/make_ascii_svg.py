@@ -120,6 +120,10 @@ def generate_ascii_svg(
         ".window-title { font-size: 11.5px; fill: #8b949e; font-weight: 500; }",
         ".ascii-row { font-size: " + f"{font_size:.2f}px" + "; fill: #c9d1d9; font-weight: normal; }",
         ".cursor { font-size: " + f"{font_size:.2f}px" + "; fill: #58a6ff; font-weight: bold; }",
+        "@media (prefers-reduced-motion: reduce) {",
+        "  .ascii-row { clip-path: none !important; }",
+        "  .cursor { display: none !important; }",
+        "}",
     ]
     svg_parts.append('  <style>')
     for l in css_lines:

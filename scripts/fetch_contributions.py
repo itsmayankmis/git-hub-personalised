@@ -16,6 +16,18 @@ from bs4 import BeautifulSoup
 
 DEFAULT_USERNAME = "itsmayankmis"
 
+def load_config_username(config_path="data/profile_config.json") -> str:
+    if os.path.exists(config_path):
+        try:
+            with open(config_path, "r", encoding="utf-8") as f:
+                cfg = json.load(f)
+                u = cfg.get("github_username")
+                if u:
+                    return u
+        except Exception:
+            pass
+    return DEFAULT_USERNAME
+
 def fetch_contributions(username: str):
     url = f"https://github.com/users/{username}/contributions"
     headers = {
@@ -24,7 +36,12 @@ def fetch_contributions(username: str):
         "Accept-Language": "en-US,en;q=0.9",
     }
     
-    resp = requests.get(url, headers=headers, timeout=15)
+    try:
+        resp = requests.get(url, headers=headers, timeout=15)
+    except requests.RequestException as e:
+        print(f"Error: Network request to fetch contributions failed: {e}", file=sys.stderr)
+        sys.exit(1)
+
     if resp.status_code != 200:
         print(f"Error: Failed to fetch contributions for user '{username}'. HTTP status: {resp.status_code}", file=sys.stderr)
         sys.exit(1)
@@ -157,7 +174,8 @@ def fetch_contributions(username: str):
     return result
 
 def main():
-    username = sys.argv[1] if len(sys.argv) > 1 else os.environ.get("GITHUB_USERNAME", DEFAULT_USERNAME)
+    default_user = load_config_username()
+    username = sys.argv[1] if len(sys.argv) > 1 else os.environ.get("GITHUB_USERNAME", default_user)
     print(f"Fetching contributions for '{username}'...")
     data = fetch_contributions(username)
     

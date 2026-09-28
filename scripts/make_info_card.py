@@ -154,6 +154,9 @@ def generate_info_card(config_path="data/profile_config.json", out_path="info-ca
             ".term-line {",
             "  opacity: 0;",
             "  animation: lineSlideUp 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;",
+            "}",
+            "@media (prefers-reduced-motion: reduce) {",
+            "  .term-line { opacity: 1 !important; transform: none !important; animation: none !important; }",
             "}"
         ])
     else:

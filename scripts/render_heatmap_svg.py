@@ -120,6 +120,9 @@ def render_heatmap(data_path="data/contributions.json", out_path="contrib-heatma
             "  animation: cellDrop 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;",
             "  transform-box: fill-box;",
             "  transform-origin: center;",
+            "}",
+            "@media (prefers-reduced-motion: reduce) {",
+            "  .cell { opacity: 1 !important; transform: none !important; animation: none !important; }",
             "}"
         ])
     else:
@@ -166,7 +169,9 @@ def render_heatmap(data_path="data/contributions.json", out_path="contrib-heatma
         )
 
     # Stats Footer (left side)
-    footer_text = f"{total:,} contributions in the last year  ·  Current streak: {current_streak} days  ·  Longest streak: {longest_streak} days"
+    curr_unit = "day" if current_streak == 1 else "days"
+    long_unit = "day" if longest_streak == 1 else "days"
+    footer_text = f"{total:,} contributions in the last year  ·  Current streak: {current_streak} {curr_unit}  ·  Longest streak: {longest_streak} {long_unit}"
     svg_parts.append(f'  <text x="{start_x}" y="176" class="footer">{footer_text}</text>')
 
     # Legend (right side)
