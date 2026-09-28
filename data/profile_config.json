@@ -1,0 +1,22 @@
+{
+  "github_username": "itsmayankmis",
+  "display_name": "Mayank Mishra",
+  "role_line": "Full-Stack Engineer · AI Agent Builder",
+  "info_card": {
+    "title": "itsmayankmis@github ~ $ neofetch",
+    "now": "Building autonomous AI agents & interactive developer tools",
+    "prev": "Software Engineering & Computer Science",
+    "stack": "Python, TypeScript, React, Next.js, Docker, Linux, Git",
+    "highlights": [
+      "Engineered automated terminal-first SVG pipelines",
+      "Specialized in LLM agent orchestration & tooling",
+      "Passionate about modern UX and open source"
+    ]
+  },
+  "links": {
+    "portfolio": "",
+    "linkedin": "https://linkedin.com/in/itsmayankmis",
+    "github": "https://github.com/itsmayankmis",
+    "instagram": "https://instagram.com/itsmayankmis"
+  }
+}

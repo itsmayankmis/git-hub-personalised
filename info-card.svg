@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 490 344" width="490" height="344">
+  <style>
+    svg { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, 'Courier New', monospace; }
+    .window-title { font-size: 11.5px; fill: #8b949e; font-weight: 500; }
+    .banner-text { font-size: 13.5px; font-weight: bold; fill: #58a6ff; }
+    .sep-text { font-size: 11px; fill: #30363d; }
+    .key-text { font-size: 12.5px; font-weight: 600; fill: #79c0ff; }
+    .val-text { font-size: 12.5px; fill: #c9d1d9; }
+    .header-text { font-size: 12.5px; font-weight: 600; fill: #d2a8ff; }
+    .bullet-symbol { font-size: 12.5px; fill: #7ee787; font-weight: bold; }
+    @keyframes lineSlideUp {
+      0% { opacity: 0; transform: translateY(6px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    .term-line {
+      opacity: 0;
+      animation: lineSlideUp 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+  </style>
+  <rect width="490" height="344" rx="8" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
+  <path d="M 0 8 A 8 8 0 0 1 8 0 L 482 0 A 8 8 0 0 1 490 8 L 490 36 L 0 36 Z" fill="#161b22"/>
+  <line x1="0" y1="36" x2="490" y2="36" stroke="#30363d" stroke-width="1"/>
+  <circle cx="18" cy="18" r="5.5" fill="#ff5f56"/>
+  <circle cx="36" cy="18" r="5.5" fill="#ffbd2e"/>
+  <circle cx="54" cy="18" r="5.5" fill="#27c93f"/>
+  <text x="74" y="22" class="window-title">itsmayankmis@github ~ $ neofetch</text>
+  <g class="term-line" style="animation-delay: 0.15s;">
+    <text x="24" y="62.0" class="banner-text">itsmayankmis@github</text>
+  </g>
+  <g class="term-line" style="animation-delay: 0.27s;">
+    <text x="24" y="82.5" class="sep-text">──────────────────────────────────────</text>
+  </g>
+  <g class="term-line" style="animation-delay: 0.39s;">
+    <text x="24" y="103.0" xml:space="preserve"><tspan class="key-text">Now:    </tspan><tspan class="val-text">Building autonomous AI agents &amp;</tspan></text>
+  </g>
+  <g class="term-line" style="animation-delay: 0.51s;">
+    <text x="24" y="123.5" xml:space="preserve"><tspan class="val-text">        interactive developer tools</tspan></text>
+  </g>
+  <g class="term-line" style="animation-delay: 0.63s;">
+    <text x="24" y="144.0" xml:space="preserve"><tspan class="key-text">Prev:   </tspan><tspan class="val-text">Software Engineering &amp; Computer Science</tspan></text>
+  </g>
+  <g class="term-line" style="animation-delay: 0.75s;">
+    <text x="24" y="164.5" xml:space="preserve"><tspan class="key-text">Stack:  </tspan><tspan class="val-text">Python, TypeScript, React, Next.js,</tspan></text>
+  </g>
+  <g class="term-line" style="animation-delay: 0.87s;">
+    <text x="24" y="185.0" xml:space="preserve"><tspan class="val-text">        Docker, Linux, Git</tspan></text>
+  </g>
+  <g class="term-line" style="animation-delay: 0.99s;">
+    <text x="24" y="205.5" class="header-text">Highlights:</text>
+  </g>
+  <g class="term-line" style="animation-delay: 1.11s;">
+    <text x="24" y="226.0" xml:space="preserve"><tspan class="bullet-symbol">• </tspan><tspan class="val-text">Engineered automated terminal-first SVG</tspan></text>
+  </g>
+  <g class="term-line" style="animation-delay: 1.23s;">
+    <text x="24" y="246.5" xml:space="preserve"><tspan class="val-text">  pipelines</tspan></text>
+  </g>
+  <g class="term-line" style="animation-delay: 1.35s;">
+    <text x="24" y="267.0" xml:space="preserve"><tspan class="bullet-symbol">• </tspan><tspan class="val-text">Specialized in LLM agent orchestration &amp;</tspan></text>
+  </g>
+  <g class="term-line" style="animation-delay: 1.47s;">
+    <text x="24" y="287.5" xml:space="preserve"><tspan class="val-text">  tooling</tspan></text>
+  </g>
+  <g class="term-line" style="animation-delay: 1.59s;">
+    <text x="24" y="308.0" xml:space="preserve"><tspan class="bullet-symbol">• </tspan><tspan class="val-text">Passionate about modern UX and open source</tspan></text>
+  </g>
+</svg>
