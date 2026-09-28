@@ -27,4 +27,5 @@ Full-Stack Engineer · AI Agent Builder<br><br>
   <img src="https://img.shields.io/badge/Instagram-itsmayankmis-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram Badge" />
 </a>
 
+<!-- itsmayankmis terminal profile -->
 </div>
