@@ -1,20 +1,27 @@
 {
   "github_username": "itsmayankmis",
   "display_name": "Mayank Mishra",
-  "role_line": "Full-Stack Engineer · AI Agent Builder",
+  "role_line": "Mechanical Engineering Student · CAD/CAE · 3D Modelling · Mechanical Design",
   "info_card": {
     "title": "itsmayankmis@github ~ $ neofetch",
-    "now": "Building autonomous AI agents & interactive developer tools",
-    "prev": "Software Engineering & Computer Science",
-    "stack": "Python, TypeScript, React, Next.js, Docker, Linux, Git",
+    "fields": [
+      { "key": "Role", "value": "Mechanical Engineering @ BIET Jhansi" },
+      { "key": "CAD/CAE", "value": "SolidWorks, Onshape, FreeCAD, ANSYS" },
+      { "key": "Focus", "value": "Machine Design, Simulation, Dynamics" },
+      { "key": "Tech", "value": "Python, Linux, Raspberry Pi, Arduino" }
+    ],
+    "now": "Mechanical Engineering @ BIET Jhansi ('23–'27)",
+    "prev": "CAD/CAE: SolidWorks, Onshape, FreeCAD, ANSYS",
+    "stack": "Python, Linux, Raspberry Pi, Arduino, Simulation",
+    "highlights_title": "Highlights:",
     "highlights": [
-      "Engineered automated terminal-first SVG pipelines",
-      "Specialized in LLM agent orchestration & tooling",
-      "Passionate about modern UX and open source"
+      "SolidWorks: Complete V6 Engine 3D assembly & multi-physics simulation",
+      "Mercenary Motorsports: Competition go-kart chassis & Yamaha engine repair",
+      "SolarPunk Corps: Robotics, automation & peer workshops (Python / Arduino)"
     ]
   },
   "links": {
-    "portfolio": "",
+    "email": "mailto:mishra.mayankkk@gmail.com",
     "linkedin": "https://linkedin.com/in/itsmayankmis",
     "github": "https://github.com/itsmayankmis",
     "instagram": "https://instagram.com/itsmayankmis"

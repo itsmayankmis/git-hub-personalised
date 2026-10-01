@@ -40,10 +40,9 @@ Anyone who visits your profile will see:
 ## 3. Editing the Info Card (Neofetch Panel)
 
 1. Open `data/profile_config.json` and edit any fields:
-   - `now`: What you're currently building or learning.
-   - `prev`: Previous experience or degree.
-   - `stack`: Comma-separated list of technologies.
-   - `highlights`: Bullet points showcasing recent wins or projects.
+   - `fields`: Custom terminal key-value pairs (e.g. `Role`, `CAD/CAE`, `Focus`, `Tech`).
+   - `highlights`: Bullet points showcasing key projects, achievements, or leadership.
+   - `now` / `prev` / `stack`: Legacy fallback key-value fields.
 2. Regenerate the SVG:
    ```bash
    ./.venv/bin/python scripts/make_info_card.py

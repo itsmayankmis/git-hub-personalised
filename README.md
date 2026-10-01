@@ -15,13 +15,16 @@
 
 <h3><code>itsmayankmis@github ~ $ ./links.sh</code></h3>
 <b>Mayank Mishra</b><br>
-Full-Stack Engineer · AI Agent Builder<br><br>
+Mechanical Engineering Student · CAD/CAE · 3D Modelling · Mechanical Design<br><br>
 
 <a href="https://github.com/itsmayankmis" target="_blank">
   <img src="https://img.shields.io/badge/GitHub-itsmayankmis-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Badge" />
 </a>
 <a href="https://linkedin.com/in/itsmayankmis" target="_blank">
   <img src="https://img.shields.io/badge/LinkedIn-itsmayankmis-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge" />
+</a>
+<a href="mailto:mishra.mayankkk@gmail.com">
+  <img src="https://img.shields.io/badge/Email-mishra.mayankkk%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email Badge" />
 </a>
 <a href="https://instagram.com/itsmayankmis" target="_blank">
   <img src="https://img.shields.io/badge/Instagram-itsmayankmis-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram Badge" />

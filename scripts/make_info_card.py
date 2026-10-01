@@ -48,13 +48,30 @@ def generate_info_card(config_path="data/profile_config.json", out_path="info-ca
     username = config.get("github_username", "itsmayankmis")
     info = config.get("info_card", {})
     title = info.get("title", f"{username}@github ~ $ neofetch")
-    now_val = info.get("now", "Building autonomous AI agents & interactive developer tools")
-    prev_val = info.get("prev", "Software Engineering & Computer Science")
-    stack_val = info.get("stack", "Python, TypeScript, React, Next.js, Docker, Linux, Git")
+
+    # Read structured fields or fallback to legacy now/prev/stack
+    fields = info.get("fields")
+    if not fields:
+        fields = []
+        if "now" in info:
+            fields.append({"key": "Now", "value": info["now"]})
+        if "prev" in info:
+            fields.append({"key": "Prev", "value": info["prev"]})
+        if "stack" in info:
+            fields.append({"key": "Stack", "value": info["stack"]})
+        if not fields:
+            fields = [
+                {"key": "Role", "value": "Mechanical Engineering @ BIET Jhansi"},
+                {"key": "CAD/CAE", "value": "SolidWorks, Onshape, FreeCAD, ANSYS"},
+                {"key": "Focus", "value": "Machine Design, Simulation, Dynamics"},
+                {"key": "Tech", "value": "Python, Linux, Raspberry Pi, Arduino"}
+            ]
+
+    highlights_title = info.get("highlights_title", "Highlights:")
     highlights = info.get("highlights", [
-        "Engineered automated terminal-first SVG pipelines",
-        "Specialized in LLM agent orchestration & tooling",
-        "Passionate about modern UX and open source"
+        "SolidWorks: Complete V6 Engine 3D assembly & multi-physics simulation",
+        "Mercenary Motorsports: Competition go-kart chassis & Yamaha engine repair",
+        "SolarPunk Corps: Robotics, automation & peer workshops (Python / Arduino)"
     ])
 
     is_static = os.environ.get("STATIC", "0") == "1"
@@ -63,21 +80,23 @@ def generate_info_card(config_path="data/profile_config.json", out_path="info-ca
     title_bar_height = 36
 
     # We will build structured lines for the terminal output
-    # Each entry: { "key": str, "value": str, "is_header": bool, "is_bullet": bool }
     raw_sections = [
         {"type": "banner", "text": f"{username}@github"},
         {"type": "separator", "text": "─" * 38},
-        {"type": "kv", "key": "Now", "value": now_val},
-        {"type": "kv", "key": "Prev", "value": prev_val},
-        {"type": "kv", "key": "Stack", "value": stack_val},
-        {"type": "header", "text": "Highlights:"},
     ]
-    for h in highlights:
-        raw_sections.append({"type": "bullet", "value": h})
+    for f in fields:
+        raw_sections.append({"type": "kv", "key": f.get("key", ""), "value": f.get("value", "")})
+
+    if highlights:
+        raw_sections.append({"type": "header", "text": highlights_title})
+        for h in highlights:
+            raw_sections.append({"type": "bullet", "value": h})
 
     # Layout into renderable lines with wrapping
     render_lines = []
-    key_width = 8 # characters for key label
+    longest_key = max((len(item["key"]) for item in raw_sections if item["type"] == "kv"), default=6)
+    key_width = max(8, longest_key + 2)
+    val_max_width = max(36, 48 - key_width)
 
     for item in raw_sections:
         itype = item["type"]
@@ -98,7 +117,7 @@ def generate_info_card(config_path="data/profile_config.json", out_path="info-ca
             })
         elif itype == "kv":
             k = item["key"]
-            val_wrapped = wrap_text(item["value"], max_width=40)
+            val_wrapped = wrap_text(item["value"], max_width=val_max_width)
             for idx, line_text in enumerate(val_wrapped):
                 if idx == 0:
                     render_lines.append({

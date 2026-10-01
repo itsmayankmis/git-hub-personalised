@@ -34,36 +34,36 @@
     <text x="24" y="82.5" class="sep-text">──────────────────────────────────────</text>
   </g>
   <g class="term-line" style="animation-delay: 0.39s;">
-    <text x="24" y="103.0" xml:space="preserve"><tspan class="key-text">Now:    </tspan><tspan class="val-text">Building autonomous AI agents &amp;</tspan></text>
+    <text x="24" y="103.0" xml:space="preserve"><tspan class="key-text">Role:    </tspan><tspan class="val-text">Mechanical Engineering @ BIET Jhansi</tspan></text>
   </g>
   <g class="term-line" style="animation-delay: 0.51s;">
-    <text x="24" y="123.5" xml:space="preserve"><tspan class="val-text">        interactive developer tools</tspan></text>
+    <text x="24" y="123.5" xml:space="preserve"><tspan class="key-text">CAD/CAE: </tspan><tspan class="val-text">SolidWorks, Onshape, FreeCAD, ANSYS</tspan></text>
   </g>
   <g class="term-line" style="animation-delay: 0.63s;">
-    <text x="24" y="144.0" xml:space="preserve"><tspan class="key-text">Prev:   </tspan><tspan class="val-text">Software Engineering &amp; Computer Science</tspan></text>
+    <text x="24" y="144.0" xml:space="preserve"><tspan class="key-text">Focus:   </tspan><tspan class="val-text">Machine Design, Simulation, Dynamics</tspan></text>
   </g>
   <g class="term-line" style="animation-delay: 0.75s;">
-    <text x="24" y="164.5" xml:space="preserve"><tspan class="key-text">Stack:  </tspan><tspan class="val-text">Python, TypeScript, React, Next.js,</tspan></text>
+    <text x="24" y="164.5" xml:space="preserve"><tspan class="key-text">Tech:    </tspan><tspan class="val-text">Python, Linux, Raspberry Pi, Arduino</tspan></text>
   </g>
   <g class="term-line" style="animation-delay: 0.87s;">
-    <text x="24" y="185.0" xml:space="preserve"><tspan class="val-text">        Docker, Linux, Git</tspan></text>
+    <text x="24" y="185.0" class="header-text">Highlights:</text>
   </g>
   <g class="term-line" style="animation-delay: 0.99s;">
-    <text x="24" y="205.5" class="header-text">Highlights:</text>
+    <text x="24" y="205.5" xml:space="preserve"><tspan class="bullet-symbol">• </tspan><tspan class="val-text">SolidWorks: Complete V6 Engine 3D assembly</tspan></text>
   </g>
   <g class="term-line" style="animation-delay: 1.11s;">
-    <text x="24" y="226.0" xml:space="preserve"><tspan class="bullet-symbol">• </tspan><tspan class="val-text">Engineered automated terminal-first SVG</tspan></text>
+    <text x="24" y="226.0" xml:space="preserve"><tspan class="val-text">  &amp; multi-physics simulation</tspan></text>
   </g>
   <g class="term-line" style="animation-delay: 1.23s;">
-    <text x="24" y="246.5" xml:space="preserve"><tspan class="val-text">  pipelines</tspan></text>
+    <text x="24" y="246.5" xml:space="preserve"><tspan class="bullet-symbol">• </tspan><tspan class="val-text">Mercenary Motorsports: Competition go-kart</tspan></text>
   </g>
   <g class="term-line" style="animation-delay: 1.35s;">
-    <text x="24" y="267.0" xml:space="preserve"><tspan class="bullet-symbol">• </tspan><tspan class="val-text">Specialized in LLM agent orchestration &amp;</tspan></text>
+    <text x="24" y="267.0" xml:space="preserve"><tspan class="val-text">  chassis &amp; Yamaha engine repair</tspan></text>
   </g>
   <g class="term-line" style="animation-delay: 1.47s;">
-    <text x="24" y="287.5" xml:space="preserve"><tspan class="val-text">  tooling</tspan></text>
+    <text x="24" y="287.5" xml:space="preserve"><tspan class="bullet-symbol">• </tspan><tspan class="val-text">SolarPunk Corps: Robotics, automation &amp;</tspan></text>
   </g>
   <g class="term-line" style="animation-delay: 1.59s;">
-    <text x="24" y="308.0" xml:space="preserve"><tspan class="bullet-symbol">• </tspan><tspan class="val-text">Passionate about modern UX and open source</tspan></text>
+    <text x="24" y="308.0" xml:space="preserve"><tspan class="val-text">  peer workshops (Python / Arduino)</tspan></text>
   </g>
 </svg>
